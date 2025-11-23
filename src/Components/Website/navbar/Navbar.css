@@ -1,0 +1,27 @@
+header{
+    overflow: hidden;
+}
+header .container::after {
+  content: url("/public/imgs/Navbarimgs/AbstractDesignright.png");
+  position: absolute;
+  left:-71px;
+  bottom:-2px;
+  width: 70px;
+  height: 70px;
+}
+
+header .container::before {
+  content: url("/public/imgs/Navbarimgs/AbstractDesignleft.png");
+  position: absolute;
+  right:-71px;
+  bottom:-2px;
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width:768px) {
+  
+header .container::before, header .container::after{
+    display: none;
+}
+}

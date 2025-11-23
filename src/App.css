@@ -1,0 +1,32 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
+table {
+          width: 100%;
+          border-collapse: collapse;
+          background-color: #121212;
+          color: #eee;
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+        th, td {
+          padding: 12px 15px;
+          border: 1px solid #333;
+          text-align: center;
+        }
+        thead {
+          background-color: #1f1f1f;
+        }
+        tbody tr:nth-child(even) {
+          background-color: #1e1e1e;
+        }
+        tbody tr:hover {
+          background-color: #333;
+          cursor: pointer;
+        }
+
+      .containertable {
+            overflow-x: auto;
+            height: 80vh;
+        }

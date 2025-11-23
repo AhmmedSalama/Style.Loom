@@ -1,0 +1,38 @@
+.NavBar{
+    top: 0;
+    height: 70px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.SideBar{
+    top: 70px;
+    height: 100vh;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 220px;
+    transition: 0.3s;
+   
+}
+.sidebar-link{
+    color: #495057;
+    font-size: 18px;
+    transition: 0.3s;
+    margin: 0px 8px;
+    border-radius: 6px;
+}
+.SideBar .active{
+ background-color: #f2f3fe;
+ color: #038edc;
+}
+.sidebar-link:hover{
+    color: black;
+}
+.SideBar .active:hover{
+  color: #038edc;  
+}
+a{
+text-decoration: none !important;
+}

@@ -1,0 +1,33 @@
+.contact-item{
+    position: relative;
+    overflow: hidden;
+}
+.contact-item img{
+    z-index: 2;
+}
+.contact-item::before{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@media (max-width:769px) {
+.contact-item::before{
+    width: 120px;
+    height: 120px;
+}
+    
+}
+
+.contact-item:nth-of-type(1):before {
+  content: url("/public/imgs/contactimgs/Iconemail.webp");
+}
+
+.contact-item:nth-of-type(2):before {
+  content: url("/public/imgs/contactimgs/Iconcall.webp");
+}
+
+.contact-item:nth-of-type(3):before {
+  content: url("/public/imgs/contactimgs/iconlocationcontact.webp");
+}

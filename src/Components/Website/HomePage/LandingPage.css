@@ -1,0 +1,133 @@
+.ShopNowbtn{
+    position: absolute;
+    left: 50%;
+    bottom: -22px;
+    transform: translate(-50%);
+}
+
+.item {
+  position: relative;
+}
+
+.item h1,
+.item p {
+  position: relative;
+  z-index: 2;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;     
+  pointer-events: none; 
+}
+
+/* حدّد الصورة لكل عنصر حسب ترتيبه */
+.item:nth-of-type(1)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(6).png");
+}
+.item:nth-of-type(2)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(5).png");
+}
+.item:nth-of-type(3)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(4).png");
+}
+.item:nth-of-type(4)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(3).png");
+}
+.item:nth-of-type(5)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(2).png");
+}
+.item:nth-of-type(6)::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/iconsbg(1).png");
+}
+.NavigatingtheStyleLoom .heading h1 ,p{
+position: relative;
+  z-index: 2;
+}
+.NavigatingtheStyleLoom .heading::before{
+    position: absolute;
+    content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign.png");
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* الموبايل: اخفاء before لكل الأقسام */
+@media (max-width:768px) {
+  .NavigatingtheStyleLoom .heading::before,
+  .ElevateYourStyle .heading::before,
+  .TheStyleLoom .heading::before,
+  .ExploretheLatest .heading::before,
+  .HaveQuestions .heading::before {
+    display: none;
+  }
+}
+
+/* النص فوق الـ ::before */
+.ElevateYourStyle .heading h1,
+.TheStyleLoom .heading h1,
+.HaveQuestions .heading h1,
+.ExploretheLatest .heading h1,
+.ElevateYourStyle .heading p,
+.TheStyleLoom .heading p,
+.ExploretheLatest .heading p,
+.HaveQuestions .heading p {
+  position: relative;
+  z-index: 2;
+}
+
+/* خصائص مشتركة للـ ::before */
+.ElevateYourStyle .heading::before,
+.TheStyleLoom .heading::before,
+.ExploretheLatest .heading::before,
+.HaveQuestions .heading::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* الصور الخاصة بكل قسم (نفس المسارات) */
+.ElevateYourStyle .heading::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(1).png");
+}
+
+.TheStyleLoom .heading::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(2).png");
+}
+
+.HaveQuestions .heading::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(3).png");
+}
+
+.ExploretheLatest .heading::before {
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(1).png");
+}
+
+.elevateyourwardrobe h1 ,p,a{
+position: relative;
+z-index: 2;
+}
+.elevateyourwardrobe::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(4).png");
+}
+
+.elevateyourwardrobe h1 ,p,a{
+position: relative;
+z-index: 2;
+}
+.elevateyourwardrobe::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  content: url("/public/imgs/landingpage/icons/iconsBg/AbstractDesign(4).png");
+}
+
